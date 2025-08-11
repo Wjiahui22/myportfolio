@@ -20,7 +20,7 @@ html {
 
 /* Header - Full height intro */
 .intro {
-  height: 50vh;
+  height: 25vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -87,7 +87,7 @@ html {
   margin: 0 auto;
 }
 
-/* Portfolio section - seamless grid */
+/* Portfolio section - updated grid layout */
 .portfolio {
   padding: 4rem 2rem;
   background: #f8f9fa;
@@ -104,17 +104,17 @@ html {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 0;
+  grid-template-columns: 1fr; /* One project per row */
+  gap: 2rem;
 }
 
 .project {
   background: #fff;
   display: flex;
-  flex-direction: column;
-  min-height: 500px;
-  transition: transform 0.3s ease;
+  flex-direction: row; /* Picture on left, content on right */
+  min-height: 250px;
   border: 1px solid #e9ecef;
+  overflow: hidden;
 }
 
 .project:hover {
@@ -125,18 +125,28 @@ html {
 
 .project-image {
   flex: 1;
+  min-width: 250px;
   background: #e9ecef;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #666;
-  font-size: 1.1rem;
-  min-height: 250px;
 }
 
+.project-image img {
+  width: 300px;  /* Bigger than before */
+  height: 300px;
+  object-fit: cover;
+}
+
+
+
 .project-content {
+  flex: 2;
   padding: 2rem;
   background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project h3 {
@@ -146,15 +156,33 @@ html {
 }
 
 .project p {
-  color: #666;
-  margin-bottom: 1.5rem;
+  color: #12132a;
+  margin-bottom: 1rem;
   line-height: 1.6;
+}
+
+.project .project-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.project .view-case-study {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.project .view-case-study:hover {
+  text-decoration: underline;
 }
 
 .project-tags {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
+  margin-top: auto;
 }
 
 .tag {
@@ -234,6 +262,15 @@ html {
 
   .portfolio-flow {
     grid-template-columns: 1fr;
+  }
+
+  .project {
+    flex-direction: column; /* Stack on small screens */
+    min-height: 500px;
+  }
+
+  .project-image {
+    min-height: 250px;
   }
 
   .contact-links {
