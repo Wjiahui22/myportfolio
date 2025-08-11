@@ -28,12 +28,28 @@ function App() {
         </div>
         <div className="project-content">
           <h3>ArtRest</h3>
-          <p>As part of the Design Thinking and Communication course at Northwestern’s McCormick School of Engineering, our team partnered with a patient at Bridges Adult Transition Center who has spastic quadriplegia and experiences arm fatigue while painting. We designed and prototyped an adjustable armrest to support her creative practice. The device features finger loops for grip stability, height adjustment for ergonomic support, and a sliding rail mechanism to allow fluid arm movement across the canvas.</p>
+          <p>Designed and prototyped an adjustable armrest to reduce arm fatigue for a patient with spastic quadriplegia, enhancing painting endurance with ergonomic support and fluid arm movement.</p>
           <p>Academic Project · Spring 2025</p>
           <a href="/pdfs/ArtRest.pdf" className="view-case-study">View Case Study -{'>'} </a>
           <br></br>
           <div className="project-tags">
             <span className="tag">MechEng</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="project">
+        <div className="project-image">
+          <img src="/images/IMG_5655.JPG" alt="ArtRest" style={{maxWidth: '100%', maxHeight: '230px', objectFit: 'cover'}} />
+        </div>
+        <div className="project-content">
+          <h3>Bloomie</h3>
+          <p>Developed Bloomie, an interactive artificial plant prototype to educate children on plant sensitivity to environmental changes like light, heat, water, and touch, preventing real plant loss while enabling hands-on learning through sensors, a microcontroller, and motorized furling petals.</p>
+          <p>Academic Project · Summer 2023</p>
+          <a href="/pdfs/Bloomie.pdf" className="view-case-study">View Case Study -{'>'} </a>
+          <br></br>
+          <div className="project-tags">
+            <span className="tag">ElectrEng</span>
           </div>
         </div>
       </div>
