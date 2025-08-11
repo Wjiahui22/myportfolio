@@ -98,11 +98,21 @@ function App() {
     </div>
   </section>
 
-      {/* About Section */}
-      <section className="about">
-        <h2>About Me</h2>
-        <p>I merge mechanical engineering with design to build efficient, elegant solutions. From microcomponents to big ideas, I make the complex feel accessible.</p>
-      </section>
+{/* About Section */}
+<section className="about">
+  <div className="about-image">
+    <img src="/images/Jiahui(Winnie)_Chen_Microelectronics.png" alt="Me" />
+  </div>
+  <div className="about-text">
+    <h2>About Me</h2>
+    <p>
+      I merge mechanical engineering with design to build efficient, elegant
+      solutions. From microcomponents to big ideas, I make the complex feel
+      accessible.
+    </p>
+  </div>
+</section>
+
 
       {/* Contact Section */}
       <section className="contact">

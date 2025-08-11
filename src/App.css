@@ -20,7 +20,7 @@ html {
 
 /* Header - Full height intro */
 .intro {
-  height: 25vh;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -86,6 +86,15 @@ html {
   max-width: 700px;
   margin: 0 auto;
 }
+
+.about-image img {
+  width: 150px;   /* smaller size */
+  height: 150px;  /* keep square for circle */
+  border-radius: 50%; /* make it circular */
+  object-fit: cover;   /* cover the square nicely */
+  margin: 0 auto 1rem auto; /* center image and add bottom margin */
+}
+
 
 /* Portfolio section - updated grid layout */
 .portfolio {
