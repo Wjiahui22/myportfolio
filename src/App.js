@@ -10,7 +10,6 @@ function App() {
         <h1>Winnie Chen</h1>
         <p className="subtitle">Engineering precision, designing with heart</p>
         <div className="contact-info">
-          <a href="mailto:your.email@example.com">jhwinniec@u.northwestern.edu</a>
           <a href="https://linkedin.com/in/jhwinniec">LinkedIn</a>
           <a href="https://github.com/Wjiahui22">GitHub</a>
         </div>
