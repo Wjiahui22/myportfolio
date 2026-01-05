@@ -21,7 +21,23 @@ function App() {
 
   <section className="portfolio">
     <div className="portfolio-flow">
-      
+
+      <div className="project">
+        <div className="project-image">
+          <img src="/images/good.png" alt="ArtRest" style={{maxWidth: '100%', maxHeight: '230px', objectFit: 'cover'}} />
+        </div>
+        <div className="project-content">
+          <h3>3D-Printed Prosthetic</h3>
+          <p>Developed a lightweight, low-cost 3D-printed prosthetic foot prototype designed to safely support human gait loading conditions, applying beam theory, material mechanics, and rapid prototyping to meet strict load, deflection, and manufacturability constraints.</p>
+          <p>Academic Project · Fall 2025</p>
+          <a href="/pdfs/3D-Printed Prosthetic Foot.pdf" className="view-case-study">View Case Study -{'>'} </a>
+          <br></br>
+          <div className="project-tags">
+            <span className="tag">BiomedEng</span>
+          </div>
+        </div>
+      </div>
+
       <div className="project">
         <div className="project-image">
           <img src="/images/IMG_5652.JPG" alt="ArtRest" style={{maxWidth: '100%', maxHeight: '230px', objectFit: 'cover'}} />
